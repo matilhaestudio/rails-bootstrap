@@ -19,16 +19,21 @@ class Admin
       @post = current_admin.posts.new(post_params)
 
       if @post.save
+        flash[:notice] = 'Publicação criada com sucesso'
         redirect_to admin_post_url(@post)
       else
+        flash[:alert] = 'Revise os seguintes campos'
         render :new
       end
     end
 
     def update
       if @post.update(post_params)
+
+        flash[:notice] = 'Publicação atualizada com sucesso'
         redirect_to admin_post_url(@post)
       else
+        flash[:alert] = 'Revise os seguintes campos'
         render :edit
       end
     end

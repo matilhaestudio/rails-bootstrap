@@ -13,7 +13,9 @@ AllCops:
     - spec/support/**/*
 
 Metrics/LineLength:
-  Max: 112
+  Max: 120
+MethodLength:
+  Max: 30
 
 Style/AccessorMethodName:
   Enabled: true
