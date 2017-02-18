@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :admins
   root to: 'static_pages#home'
+  devise_for :admins
+
+  namespace :admin do
+    resources :posts
+  end
 end

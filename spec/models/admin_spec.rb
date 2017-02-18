@@ -11,12 +11,12 @@ RSpec.describe Admin, type: :model do
     end
   end
 
-  context 'when Agency is valid' do
+  context 'when Admin is valid' do
     subject(:admin) { build(:admin) }
     it { expect(admin).to be_valid }
   end
 
-  context 'when Agency is not valid' do
+  context 'when Admin is not valid' do
     subject(:admin) { build(:admin, email: 'admin-invalid-email') }
     it { expect(admin).not_to be_valid }
   end
