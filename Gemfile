@@ -17,9 +17,9 @@ group :development, :test do
 end
 
 group :development do
+  gem 'overcommit', require: false
+  gem 'rack-mini-profiler'
+  gem 'rubocop', '~> 0.47.1', require: false
   gem 'spring'
   gem 'web-console', '~> 2.0'
-  gem 'overcommit', require: false
-  gem 'rubocop', '~> 0.47.1', require: false
-  gem 'rack-mini-profiler'
 end
