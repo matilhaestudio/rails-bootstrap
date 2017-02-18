@@ -1,5 +1,5 @@
-class Devise
-  class Admins
+module Devise
+  module Admins
     class SessionsController < Devise::SessionsController
       # before_action :configure_sign_in_params, only: [:create]
 
