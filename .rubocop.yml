@@ -10,6 +10,7 @@ AllCops:
     - config/initializers/simple_form_bootstrap.rb*
     - config/initializers/devise.rb*
     - vendor/**/*
+    - spec/support/**/*
 
 Metrics/LineLength:
   Max: 112
