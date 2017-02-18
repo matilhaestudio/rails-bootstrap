@@ -8,6 +8,7 @@ AllCops:
     - db/migrate/**/*
     - bin/**/*
     - config/initializers/simple_form_bootstrap.rb*
+    - config/initializers/devise.rb*
     - vendor/**/*
 
 Metrics/LineLength:

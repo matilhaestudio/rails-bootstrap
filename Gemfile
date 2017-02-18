@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 ruby '2.3.3'
 
 gem 'coffee-rails', '~> 4.1.0'
+gem 'devise', '~> 4.2.0'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'pg', '~> 0.15'
@@ -18,6 +19,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'better_errors'
   gem 'overcommit', require: false
   gem 'rack-mini-profiler'
   gem 'rubocop', '~> 0.47.1', require: false
